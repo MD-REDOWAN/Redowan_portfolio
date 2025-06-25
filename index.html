@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Redowan's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: rgb(44, 149, 209);
+      color: white;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 12px;
+      font-size: 19px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .hero-section {
+      background-image: url('background.jpg');
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 900px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .hero-section .name {
+      color: rgb(214, 6, 6);
+      font-size: 43px !important;
+      font-weight: bold;
+    }
+
+    .about-section {
+      padding: 50px 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 400px;
+      font-size: 21px;
+    }
+
+    .about-section .about_me {
+      width: 500px;
+      text-align: center;
+    }
+
+    .project-section {
+      padding: 60px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .project-section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .contact-section {
+      background-color: rgba(86, 191, 218, 0.692);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px;
+      color: white;
+    }
+
+    .contact-section input, textarea {
+      width: 360px;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .contact-section .form-part button {
+      padding: 14px;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      color: white;
+      background-color: rgb(13, 25, 27);
+      margin-top: 5px;
+    }
+
+    footer {
+      padding: 30px;
+      font-size: 19px;
+      background-color: rgb(160, 160, 160);
+      color: white;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 22px;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Mr.REDOWAN
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="info">
+      <p><br><br><br>I am <p class="name">REDOWAN HOSSAIN</p>
+      Exploring life's wonders through codes and design.</p>
+    </div>
+  </section>
+
+  <div class="about-section" id="about">
+    <div class="about_me">
+      <h1>About Me</h1>
+      Hey , I am Md. Redowan Hossain. I am from Lakshmipur. Right now I am studing in department of Software Engeering in Daffodil Internation University. I learn to Python, C, Java, Html, Css and Js.
+    </div>
+    <div style="width: 280px; height: auto;">
+      <img src="profile.jpg" alt="profile" width="120%" height="130%" style="border-radius: 50%;">
+    </div>
+  </div>
+
+  <section class="project-section" id="project">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Smart Dustbin</h3>
+        <p>The Smart dustbin project built by Ardino, motor and object detector sensor.It work by detected any object with user.</p>
+      </div>
+      <div class="project-card">
+        <h3>Travel Planer App</h3>
+        <p>A Travel Planer app design built with Figma that allows for all users to easy their travel plan.</p>
+      </div>
+      <div class="project-card">
+        <h3>Pharmacy Mangement System</h3>
+        <p>The Pharmacy Management System built by html, css, database script.js and php,This System design for keep pharmacy all Info update and  record.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="form-part">
+      <form action="" method="post">
+        <input type="text" id="name" name="name" placeholder="Name...">
+        <br><br>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <br><br>
+        <textarea name="message" id="message" placeholder="Message....."></textarea>
+        <br>
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+       Contact  me
+      </p>
+      <br>
+      MD. Redowan Hossain
+      <p>
+      <a href="https://facebook.com/redowan.hossain.574314" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com/in/redowan-hossain-ab497b210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/MD-REDOWAN" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://discord.com/1114540232176586862" target="blank"><i class="fab fa-discord"></i></a>
+      </p>
+    </p>
+    <p>redowanh2020@gmail.com</p>
+  </footer>
+</body>
+</html>
